@@ -1,4 +1,4 @@
-## PILOTARE UN MOTORINO DIRETTAMENTE CON I 3,3V DELLA SCHEDA PYBOARD
+### PILOTARE UN MOTORINO DIRETTAMENTE CON I 3,3V DELLA SCHEDA PYBOARD
 Solitamente per pilotare un motore elettrico con la scheda [Pyboard](https://store.micropython.org) si usa un IC L293D cioè un integrato in grado di pilotare il motorino. Questo perchè i pin della scheda non sopportano più di 25mA mentre il motorino in mio possesso vuole almeno 100mA.
 Utilizzando un transistor è possibile comandare la rotazione del motorino pilotando la sua base. Il motorino viene alimentato dal piedino **3v3** che può erogare al max **250 mA** . 
 In pratica il transistor **2n2222** viene usato in modalità [interruttore](https://www.vincenzov.net/tutorial/elettronica-di-potenza/transistor.htm) , cioè lavora in *saturazione* o in *interdizione*.
