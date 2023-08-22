@@ -4,6 +4,7 @@ Questo perchè i pin della scheda non sopportano più di 25mA mentre il motorino
 Utilizzando un transistor è possibile comandare la rotazione del motorino pilotando la sua base. Il motorino viene alimentato dal piedino **3v3** che può erogare al max **250 mA** . 
 In pratica il transistor **2n2222** viene usato in modalità [interruttore](https://www.vincenzov.net/tutorial/elettronica-di-potenza/transistor.htm) , cioè lavora in *saturazione* o in *interdizione*.
 Nel circuito si vede male ma l'emettitore del transistor è collegato al GND della scheda Pyboard.
+Più sotto ho inserito un breve codice da inserire per testare il circuito. 
 
 ![Circuito per pilotare direttamente un motorino dalla Pyboard](https://github.com/DannyOnkies/DriverMotor/blob/main/driver_motor_3v3.jpg)
 
